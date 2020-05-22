@@ -1,0 +1,2 @@
+- link:
+        ./hardware-configuration.nix: configs/virtualbox_hardware.nix

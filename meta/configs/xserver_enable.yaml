@@ -1,0 +1,2 @@
+- link:
+        ./xserver_enable.nix: configs/xserver_enable.nix
