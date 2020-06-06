@@ -89,11 +89,13 @@
   # services.xserver.displayManager.sddm.enable = true;
   # services.xserver.desktopManager.plasma5.enable = true;
 
+  programs.zsh.enable = true;
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users.jasper = {
     isNormalUser = true;
     extraGroups = [ "wheel" ]; # Enable ‘sudo’ for the user.
     hashedPassword = "$6$3fnlmXqNO7zK/UV$jmdAgMaWQ3pVbWywL5JoCCjwIhx40KKwO7bch1JDPQtCJr3ESku7CP.IgzwfcoRcRc29YOiwBdR35c4ho4Iku0";
+    shell = pkgs.zsh;
   };
 
   # This value determines the NixOS release from which the default
